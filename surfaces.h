@@ -5,3 +5,8 @@ vector diniPnt(float U, V, a, b){  //dini surface
     
     return set(x,y,z);
 }
+
+vector saddlePnt(float x,y,xPow,yPow){
+    float z = 1. - (pow(x,xPow) + pow(y,yPow));
+    return set(x,y,z);
+}
