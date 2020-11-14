@@ -1,3 +1,6 @@
+#include <math.h>
+#include "shapeUtil.h"
+
 vector diniPnt(float U, V, a, b){  //dini surface
     float x = a*cos(U) * sin(V);
     float y = a*(cos(V) + log(tan(V/2)+0.0001)) + b*U;
